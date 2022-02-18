@@ -1,6 +1,6 @@
 {
   "name": "armory",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "repo for storage backends",
   "main": "index.js",
   "repository": "git@github.com:scality/armory.git",
