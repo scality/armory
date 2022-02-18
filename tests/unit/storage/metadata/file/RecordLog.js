@@ -8,9 +8,9 @@ const sublevel = require('level-sublevel');
 
 const Logger = require('werelogs').Logger;
 
-const rpc = require('../../../../../lib/network/rpc/rpc');
+const rpc = require('arsenal').network.rpc;
 const { RecordLogService, RecordLogProxy } =
-          require('../../../../../lib/storage/metadata/file/RecordLog.js');
+          require('../../../../../metadata/file/RecordLog.js');
 
 function randomName() {
     let text = '';

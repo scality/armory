@@ -2,10 +2,10 @@
 
 const assert = require('assert');
 const stream = require('stream');
-const errors = require('../../../../../lib/errors');
+const { errors } = require('arsenal');
 
 const LogConsumer = require(
-    '../../../../../lib/storage/metadata/bucketclient/LogConsumer.js');
+    '../../../../../metadata/bucketclient/LogConsumer.js');
 
 /* eslint-disable max-len */
 const mockedLogResponseData = `{
