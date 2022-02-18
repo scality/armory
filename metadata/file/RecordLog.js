@@ -3,8 +3,8 @@
 const stream = require('stream');
 const debug = require('debug')('record-log');
 
-const errors = require('../../../errors');
-const rpc = require('../../../network/rpc/rpc');
+const { errors } = require('arsenal');
+const rpc = require('arsenal').network.rpc;
 
 const RECORD_LOG_PREFIX = '..recordLogs';
 const DEFAULT_RECORD_LOG_NAME = 's3-recordlog';
