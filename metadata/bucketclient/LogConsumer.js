@@ -5,7 +5,7 @@ const jsonStream = require('JSONStream');
 
 const werelogs = require('werelogs');
 
-const errors = require('../../../errors');
+const { errors } = require('arsenal');
 
 class ListRecordStream extends stream.Transform {
     constructor(logger) {
