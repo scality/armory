@@ -8,7 +8,7 @@
   "license": "Apache-2.0",
   "private": false,
   "dependencies": {
-    "arsenal": "scality/arsenal#7.10.11",
+    "arsenal": "scality/arsenal#8.1.28",
     "JSONStream": "^1.3.5",
     "ioctl": "^2.0.2",
     "werelogs": "scality/werelogs#8.1.0"
