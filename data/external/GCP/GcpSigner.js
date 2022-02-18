@@ -2,7 +2,7 @@ const url = require('url');
 const qs = require('querystring');
 const AWS = require('aws-sdk');
 const werelogs = require('werelogs');
-const { constructStringToSignV2 } = require('../../../../auth/auth').client;
+const { constructStringToSignV2 } = require('arsenal').auth.client;
 
 const logger = new werelogs.Logger('GcpSigner');
 

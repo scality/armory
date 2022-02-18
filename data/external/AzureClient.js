@@ -1,16 +1,16 @@
 const url = require('url');
 
 const azure = require('azure-storage');
-const errors = require('../../../errors');
-const azureMpuUtils = require('../../../s3middleware/azureHelpers/mpuUtils');
+const errors = require('arsenal').errors;
+const azureMpuUtils = require('arsenal').s3middleware.azureHelper.mpuUtils;
 const { validateAndFilterMpuParts } =
-    require('../../../s3middleware/processMpuParts');
+    require('arsenal').s3middleware.processMpuParts;
 
 const { createLogger, logHelper, translateAzureMetaHeaders } =
     require('./utils');
 
-const constants = require('../../../constants');
-const packageVersion = require('../../../../package.json').version;
+const constants = require('arsenal').constants;
+const packageVersion = require('../../package.json').version;
 
 azure.Constants.USER_AGENT_PRODUCT_NAME = constants.productName;
 azure.Constants.USER_AGENT_PRODUCT_VERSION = packageVersion;

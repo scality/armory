@@ -1,4 +1,4 @@
-const errors = require('../../../errors');
+const errors = require('arsenal').errors;
 const {
     supportedOperators,
     validateConditionsObject,

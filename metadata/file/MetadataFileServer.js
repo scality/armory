@@ -9,11 +9,11 @@ const debug = require('debug')('MetadataFileServer');
 const diskusage = require('diskusage');
 const werelogs = require('werelogs');
 
-const constants = require('../../../constants');
-const errors = require('../../../errors');
+const constants = require('arsenal').constants;
+const errors = require('arsenal').errors;
 const storageUtils = require('../../utils');
-const rpc = require('../../../network/rpc/rpc');
-const levelNet = require('../../../network/rpc/level-net');
+const rpc = require('arsenal').network.rpc.rpc;
+const levelNet = require('arsenal').network.level;
 const { RecordLogService } = require('./RecordLog.js');
 
 const WGM = require('../../../versioning/WriteGatheringManager');

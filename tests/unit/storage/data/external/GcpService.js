@@ -1,6 +1,6 @@
 const assert = require('assert');
 const http = require('http');
-const { GCP } = require('../../../../../lib/storage/data/external/GCP');
+const { GCP } = require('../../../../../data/external/GCP');
 
 const httpPort = 8888;
 

@@ -1,7 +1,7 @@
-const errors = require('../../../errors');
-const list = require('../../../algos/list/exportAlgos');
+const errors = require('arsenal').errors;
+const list = require('arsenal').algorithms.list;
 const genVID =
-    require('../../../versioning/VersionID').generateVersionId;
+    require('arsenal').versioning.VersionID.generateVersionId;
 const { serializeCircJSON } = require('../../utils');
 
 const getMultipartUploadListing = require('./getMultipartUploadListing');

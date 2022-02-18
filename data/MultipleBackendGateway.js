@@ -1,8 +1,8 @@
 const async = require('async');
 
-const errors = require('../../errors');
-const { parseTagFromQuery } = require('../../s3middleware/tagging');
-const { externalBackendHealthCheckInterval } = require('../../constants');
+const errors = require('arsenal').errors;
+const { parseTagFromQuery } = require('arsenal').s3middleware.tagging;
+const { externalBackendHealthCheckInterval } = require('arsenal').constants;
 const DataFileBackend = require('./file/DataFileInterface');
 const { createLogger, checkExternalBackend } = require('./external/utils');
 

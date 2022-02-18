@@ -1,7 +1,7 @@
 const assert = require('assert');
 const http = require('http');
 const MetadataWrapper =
-    require('../../../../../lib/storage/metadata/MetadataWrapper');
+    require('../../../../../metadata/MetadataWrapper');
 
 class MockAzureClient {
     put(stream, size, keyContext, reqUids, callback, skey, metadata) {

@@ -1,6 +1,6 @@
 const async = require('async');
 const werelogs = require('werelogs');
-const constants = require('../../../constants');
+const constants = require('arsenal').constants;
 
 /* eslint-disable camelcase */
 const backendHealth = {

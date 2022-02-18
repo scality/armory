@@ -1,6 +1,6 @@
-const errors = require('../../../errors');
+const errors = require('arsenal').errors;
 const { createLogger, logHelper } = require('./utils');
-const RESTClient = require('../../../network/rest/RESTClient');
+const RESTClient = require('arsenal').network.rest.RESTClient;
 
 class PfsClient {
     constructor(config) {

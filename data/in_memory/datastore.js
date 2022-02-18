@@ -1,7 +1,7 @@
 const stream = require('stream');
 const werelogs = require('werelogs');
 
-const errors = require('../../../errors');
+const errors = require('arsenal').errors;
 
 const logger = new werelogs.Logger('MemDataBackend');
 

@@ -1,6 +1,6 @@
-const errors = require('../../errors');
+const errors = require('arsenal').errors;
 
-const BucketInfo = require('../../models/BucketInfo');
+const BucketInfo = require('arsenal').models.BucketInfo;
 
 const BucketClientInterface = require('./bucketclient/BucketClientInterface');
 const BucketFileInterface = require('./file/BucketFileInterface');

@@ -1,9 +1,9 @@
 const async = require('async');
 const assert = require('assert');
 const stream = require('stream');
-const errors = require('../../../../errors');
+const errors = require('arsenal').errors;
 const { minimumAllowedPartSize, gcpMaximumAllowedPartCount } =
-    require('../../../../constants');
+    require('arsenal').constants;
 const { createMpuList, logger } = require('./GcpUtils');
 const { logHelper } = require('../utils');
 

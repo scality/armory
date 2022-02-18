@@ -2,13 +2,13 @@ const assert = require('assert');
 const async = require('async');
 const stream = require('stream');
 
-const AwsClient = require('../../../../../lib/storage/data/external/AwsClient');
-const GcpClient = require('../../../../../lib/storage/data/external/GcpClient');
+const AwsClient = require('../../../../../data/external/AwsClient');
+const GcpClient = require('../../../../../data/external/GcpClient');
 const AzureClient =
-    require('../../../../../lib/storage/data/external/AzureClient');
+    require('../../../../../data/external/AzureClient');
 const DummyService = require('../DummyService');
 const { DummyRequestLogger } = require('../../../helpers');
-const BucketInfo = require('../../../../../lib/models/BucketInfo');
+const BucketInfo = require('arsenal').models.BucketInfo;
 
 const backendClients = [
     {

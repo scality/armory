@@ -1,11 +1,11 @@
 const AWS = require('aws-sdk');
 const werelogs = require('werelogs');
 
-const errors = require('../../../errors');
-const MD5Sum = require('../../../s3middleware/MD5Sum');
+const errors = require('arsenal').errors;
+const MD5Sum = require('arsenal').s3middleware.MD5Sum;
 const getMetaHeaders =
-    require('../../../s3middleware/userMetadata').getMetaHeaders;
-const { prepareStream } = require('../../../s3middleware/prepareStream');
+      require('arsenal').s3middleware.userMetadata.getMetaHeaders;
+const prepareStream = require('arsenal').s3middleware.prepareStream;
 const { createLogger, logHelper, removeQuotes, trimXMetaPrefix } =
     require('./utils');
 

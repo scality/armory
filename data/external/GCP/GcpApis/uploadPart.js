@@ -1,4 +1,4 @@
-const errors = require('../../../../../errors');
+const errors = require('arsenal').errors;
 const { getPartNumber, createMpuKey, logger } = require('../GcpUtils');
 const { logHelper } = require('../../utils');
 

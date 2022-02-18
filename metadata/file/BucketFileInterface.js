@@ -1,15 +1,15 @@
 const cluster = require('cluster');
 const async = require('async');
 
-const errors = require('../../../errors');
+const errors = require('arsenal').errors;
 
-const BucketInfo = require('../../../models/BucketInfo');
+const BucketInfo = require('arsenal').models.BucketInfo;
 
-const list = require('../../../algos/list/exportAlgos');
+const list = require('arsenal').algorithms.list;
 
 const MetadataFileClient = require('./MetadataFileClient');
 const versionSep =
-    require('../../../versioning/constants')
+    require('arsenal').versioning
     .VersioningConstants.VersionId.Separator;
 
 const METASTORE = '__metastore';

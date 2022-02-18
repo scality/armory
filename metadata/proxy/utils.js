@@ -1,6 +1,6 @@
 const url = require('url');
 const querystring = require('querystring');
-const errors = require('../../../errors');
+const errors = require('arsenal').errors;
 
 /**
  * Extracts components from URI.

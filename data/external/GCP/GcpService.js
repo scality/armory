@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 const Service = AWS.Service;
 
-const errors = require('../../../../errors');
+const errors = require('arsenal').errors;
 const GcpApis = require('./GcpApis');
 const GcpServiceSetup = require('./GcpServiceSetup');
 const GcpManagedUpload = require('./GcpManagedUpload');

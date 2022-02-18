@@ -3,7 +3,7 @@
 const stream = require('stream');
 const debug = require('debug')('record-log');
 
-const { errors } = require('arsenal');
+const errors = require('arsenal').errors;
 const rpc = require('arsenal').network.rpc;
 
 const RECORD_LOG_PREFIX = '..recordLogs';

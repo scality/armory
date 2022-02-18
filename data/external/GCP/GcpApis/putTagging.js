@@ -1,5 +1,5 @@
 const async = require('async');
-const errors = require('../../../../../errors');
+const errors = require('arsenal').errors;
 
 const { processTagSet } = require('../GcpUtils');
 

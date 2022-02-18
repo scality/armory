@@ -1,13 +1,13 @@
 const assert = require('assert');
 const crypto = require('crypto');
 
-const BackendInfo = require('../../../../lib/models/BackendInfo');
-const DataWrapper = require('../../../../lib/storage/data/DataWrapper');
+const BackendInfo = require('arsenal').models.BackendInfo;
+const DataWrapper = require('../../../../data/DataWrapper');
 const DummyRequestLogger = require('../../helpers').DummyRequestLogger;
 const MetadataWrapper =
-    require('../../../../lib/storage/metadata/MetadataWrapper');
+    require('../../../../metadata/MetadataWrapper');
 const MultipleBackendGateway =
-    require('../../../../lib/storage/data/MultipleBackendGateway');
+    require('../../../../data/MultipleBackendGateway');
 
 const clientName = 'mem';
 const sproxydLocation = 'sproxydlocation';

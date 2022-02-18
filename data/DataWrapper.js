@@ -2,13 +2,13 @@ const async = require('async');
 const PassThrough = require('stream').PassThrough;
 const assert = require('assert');
 
-const errors = require('../../errors');
-const MD5Sum = require('../../s3middleware/MD5Sum');
-const NullStream = require('../../s3middleware/nullStream');
+const errors = require('arsenal').errors;
+const MD5Sum = require('arsenal').s3middleware.MD5Sum;
+const NullStream = require('arsenal').s3middleware.nullStream;
 const RelayMD5Sum = require('./utils/RelayMD5Sum');
 const backendUtils = require('./external/utils');
-const constants = require('../../constants');
-const BackendInfo = require('../../models/BackendInfo');
+const constants = require('arsenal').constants;
+const BackendInfo = require('arsenal').models.BackendInfo;
 
 const externalBackends = constants.externalBackends;
 const skipError = new Error('skip');

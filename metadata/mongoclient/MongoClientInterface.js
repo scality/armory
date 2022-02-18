@@ -11,22 +11,22 @@
  */
 const async = require('async');
 
-const constants = require('../../../constants');
+const constants = require('arsenal').constants;
 
-const { reshapeExceptionError } = require('../../../errorUtils');
-const errors = require('../../../errors');
-const BucketInfo = require('../../../models/BucketInfo');
+const { reshapeExceptionError } = require('arsenal').errorUtils;
+const errors = require('arsenal').errors;
+const BucketInfo = require('arsenal').models.BucketInfo;
 
 const MongoClient = require('mongodb').MongoClient;
 const Uuid = require('uuid');
 const diskusage = require('diskusage');
 
-const genVID = require('../../../versioning/VersionID').generateVersionId;
-const listAlgos = require('../../../algos/list/exportAlgos');
+const genVID = require('arsenal').versioning.VersionID.generateVersionId;
+const listAlgos = require('arsenal').algorithms.list;
 
 const MongoReadStream = require('./readStream');
 const MongoUtils = require('./utils');
-const Skip = require('../../../algos/list/skip');
+const Skip = require('arsenal').algorithms.list.skip;
 
 const USERSBUCKET = '__usersbucket';
 const METASTORE = '__metastore';
@@ -44,7 +44,7 @@ const initialInstanceID = process.env.INITIAL_INSTANCE_ID;
 
 let uidCounter = 0;
 
-const VID_SEP = require('../../../versioning/constants')
+const VID_SEP = require('arsenal').versioning
     .VersioningConstants.VersionId.Separator;
 
 function generateVersionId(replicationGroupId) {

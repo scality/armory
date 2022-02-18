@@ -3,8 +3,8 @@ const { EventEmitter } = require('events');
 const assert = require('assert');
 
 const DummyObjectStream = require('./DummyObjectStream');
-const { parseRange } = require('../../../../lib/network/http/utils');
-const errors = require('../../../../lib/errors');
+const { parseRange } = require('arsenal').network.http.utils;
+const { errors } = require('arsenal');
 
 const OBJECT_SIZE = 1024 * 1024 * 1024;
 

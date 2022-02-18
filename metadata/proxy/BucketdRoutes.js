@@ -1,7 +1,7 @@
 'use strict'; // eslint-disable-line strict
 
-const errors = require('../../../errors');
-const BucketInfo = require('../../../models/BucketInfo');
+const errors = require('arsenal').errors;
+const BucketInfo = require('arsenal').models.BucketInfo;
 const { getURIComponents, getRequestBody, sendResponse } = require('./utils');
 
 class BucketdRoutes {

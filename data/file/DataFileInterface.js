@@ -1,4 +1,4 @@
-const RESTClient = require('../../../network/rest/RESTClient');
+const RESTClient = require('arsenal').network.rest.RESTClient;
 
 class DataFileInterface {
     constructor(config) {

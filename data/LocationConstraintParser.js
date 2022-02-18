@@ -6,7 +6,7 @@ const Sproxy = require('sproxydclient');
 const Hyperdrive = require('hdclient');
 const HttpsProxyAgent = require('https-proxy-agent');
 
-const constants = require('../../constants');
+const constants = require('arsenal').constants;
 const DataFileBackend = require('./file/DataFileInterface');
 const inMemory = require('./in_memory/datastore').backend;
 const AwsClient = require('./external/AwsClient');

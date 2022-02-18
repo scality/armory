@@ -1,8 +1,8 @@
 const werelogs = require('werelogs');
 
-const errors = require('../../../../errors');
-const { parseTagFromQuery } = require('../../../../s3middleware/tagging');
-const { gcpTaggingPrefix } = require('../../../../constants');
+const errors = require('arsenal').errors;
+const { parseTagFromQuery } = require('arsenal').s3middleware.tagging;
+const { gcpTaggingPrefix } = require('arsenal').constants;
 
 const gcpLogLevel = 'info';
 const gcpDumpLevel = 'error';
