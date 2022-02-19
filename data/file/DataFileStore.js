@@ -6,9 +6,7 @@ const async = require('async');
 const diskusage = require('diskusage');
 const werelogs = require('werelogs');
 
-const errors = require('../../../errors');
-const stringHash = require('../../../stringHash');
-const jsutil = require('../../../jsutil');
+const { errors, stringHash, jsutil } = require('arsenal');
 const storageUtils = require('../../utils');
 
 // The FOLDER_HASH constant refers to the number of base directories
