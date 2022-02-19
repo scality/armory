@@ -7,9 +7,7 @@ const async = require('async');
 const diskusage = require('diskusage');
 const werelogs = require('werelogs');
 
-const errors = require('arsenal').errors;
-const stringHash = require('../../../stringHash');
-const jsutil = require('../../../jsutil');
+const { errors, stringHash, jsutil } = require('arsenal');
 const storageUtils = require('../../utils');
 const releasePageCacheSync = require('./utils');
 
