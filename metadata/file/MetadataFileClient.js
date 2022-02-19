@@ -1,9 +1,9 @@
 'use strict'; // eslint-disable-line
 
 const assert = require('assert');
-const constants = require('../../../constants');
+const constants = require('arsenal').constants;
 
-const levelNet = require('../../../network/rpc/level-net');
+const levelNet = require('arsenal').network.level;
 const { RecordLogProxy } = require('./RecordLog.js');
 const werelogs = require('werelogs');
 

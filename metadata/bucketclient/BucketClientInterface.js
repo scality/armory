@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const BucketInfo = require('../../../models/BucketInfo');
+const BucketInfo = require('arsenal').models.BucketInfo;
 
 class BucketClientInterface {
     constructor(params, bucketclient, logger) {
