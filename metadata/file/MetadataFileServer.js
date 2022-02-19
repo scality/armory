@@ -12,13 +12,13 @@ const werelogs = require('werelogs');
 const constants = require('arsenal').constants;
 const errors = require('arsenal').errors;
 const storageUtils = require('../../utils');
-const rpc = require('arsenal').network.rpc.rpc;
+const rpc = require('arsenal').network.rpc;
 const levelNet = require('arsenal').network.level;
 const { RecordLogService } = require('./RecordLog.js');
 
-const WGM = require('../../../versioning/WriteGatheringManager');
-const WriteCache = require('../../../versioning/WriteCache');
-const VRP = require('../../../versioning/VersioningRequestProcessor');
+const WGM = require('arsenal').versioning.WriteGatheringManager;
+const WriteCache = require('arsenal').versioning.WriteCache;
+const VRP = require('arsenal').versioning.VersioningRequestProcessor;
 
 const ROOT_DB = 'rootDB';
 const SYNC_OPTIONS = { sync: true };
