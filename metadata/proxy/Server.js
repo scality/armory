@@ -2,7 +2,7 @@
 
 const cluster = require('cluster');
 
-const HttpServer = require('../../../network/http/server');
+const HttpServer = require('arsenal').network.Server;
 const BucketdRoutes = require('./BucketdRoutes');
 
 const requiresOneWorker = {
