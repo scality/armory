@@ -26,7 +26,7 @@ const listAlgos = require('arsenal').algorithms.list;
 
 const MongoReadStream = require('./readStream');
 const MongoUtils = require('./utils');
-const Skip = require('arsenal').algorithms.list.skip;
+const Skip = require('arsenal').algorithms.listTools.Skip;
 
 const USERSBUCKET = '__usersbucket';
 const METASTORE = '__metastore';
